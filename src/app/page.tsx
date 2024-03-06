@@ -1,112 +1,164 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="py-6 space-y-6">
+        <div className="container px-4 md:px-6">
+          <div className="prose prose-gray max-w-none mx-auto">
+            <div className="pb-4 space-y-2 border-b border-gray-200 dark:border-gray-800">
+              <h1 className="text-3xl font-bold">Terms of Use</h1>
+              <p className="text-gray-500 dark:text-gray-400">
+                Please read these terms and conditions carefully before using
+                our website.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div>
+                <h2 className="text-2xl font-bold">1. Terms</h2>
+                <p>
+                  By accessing the website at
+                  <Link className="underline" href="#">
+                    https://example.com
+                  </Link>
+                  , you are agreeing to be bound by these terms of service, all
+                  applicable laws and regulations, and agree that you are
+                  responsible for compliance with any applicable local laws. If
+                  you do not agree with any of these terms, you are prohibited
+                  from using or accessing this site. The materials contained in
+                  this website are protected by applicable copyright and
+                  trademark law.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">2. Use License</h2>
+                <ol className="pl-8 list-decimal">
+                  <li>
+                    Permission is granted to temporarily download one copy of
+                    the materials (information or software) on Example's website
+                    for personal, non-commercial transitory viewing only. This
+                    is the grant of a license, not a transfer of title, and
+                    under this license you may not:
+                    <ul className="pl-8 list-disc">
+                      <li>modify or copy the materials;</li>
+                      <li>
+                        use the materials for any commercial purpose, or for any
+                        public display (commercial or non-commercial);
+                      </li>
+                      <li>
+                        attempt to decompile or reverse engineer any software
+                        contained on Example's website;
+                      </li>
+                      <li>
+                        remove any copyright or other proprietary notations from
+                        the materials; or
+                      </li>
+                      <li>
+                        transfer the materials to another person or "mirror" the
+                        materials on any other server.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    This license shall automatically terminate if you violate
+                    any of these restrictions and may be terminated by Example
+                    at any time. Upon terminating your viewing of these
+                    materials or upon the termination of this license, you must
+                    destroy any downloaded materials in your possession whether
+                    in electronic or printed format.
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">3. Disclaimer</h2>
+                <p>
+                  The materials on Example's website are provided on an 'as is'
+                  basis. Example makes no warranties, expressed or implied, and
+                  hereby disclaims and negates all other warranties including,
+                  without limitation, implied warranties or conditions of
+                  merchantability, fitness for a particular purpose, or
+                  non-infringement of intellectual property or other violation
+                  of rights.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">4. Limitations</h2>
+                <p>
+                  In no event shall Example or its suppliers be liable for any
+                  damages (including, without limitation, damages for loss of
+                  data or profit, or due to business interruption) arising out
+                  of the use or inability to use the materials on Example's
+                  website, even if Example or a Example authorized
+                  representative has been notified orally or in writing of the
+                  possibility of such damage. Because some jurisdictions do not
+                  allow limitations on implied warranties, or limitations of
+                  liability for consequential or incidental damages, these
+                  limitations may not apply to you.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">5. Accuracy of materials</h2>
+                <p>
+                  The materials appearing on Example's website could include
+                  technical, typographical, or photographic errors. Example does
+                  not warrant that any of the materials on its website are
+                  accurate, complete or current. Example may make changes to the
+                  materials contained on its website at any time without notice.
+                  However Example does not make any commitment to update the
+                  materials.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">6. Links</h2>
+                <p>
+                  Example has not reviewed all of the sites linked to its
+                  website and is not responsible for the contents of any such
+                  linked site. The inclusion of any link does not imply
+                  endorsement by Example of the site. Use of any such linked
+                  website is at the user's own risk.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">7. Modifications</h2>
+                <p>
+                  Example may revise these terms of service for its website at
+                  any time without notice. By using this website you are
+                  agreeing to be bound by the then current version of these
+                  terms of service.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">8. Governing Law</h2>
+                <p>
+                  These terms and conditions are governed by and construed in
+                  accordance with the laws of the United States and you
+                  irrevocably submit to the exclusive jurisdiction of the courts
+                  in that State or location.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className="border-t border-gray-200 dark:border-gray-800">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col gap-2 text-sm md:flex-row md:justify-between md:gap-1">
+              <p className="text-gray-500 dark:text-gray-400">
+                © 2023 Example. All rights reserved.
+              </p>
+              <nav className="flex gap-4 text-base">
+                <Link className="underline" href="#">
+                  Terms of Use
+                </Link>
+                <Link className="underline" href="#">
+                  Privacy Policy
+                </Link>
+                <Link className="underline" href="#">
+                  Contact Us
+                </Link>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
